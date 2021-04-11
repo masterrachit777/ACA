@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- FONTAWESONE CDN -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" 
+   integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+   <!-- GOOGLE FONTS -->
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+   <!-- STYLESHEET -->
+   <link href="css/signup.css" rel="stylesheet">
+   <title>Sign-In Log-In Page</title>
+   
+</head>
+<body>
+
+   <div class="container">
+      <div class="forms-container">
+         <div class="signin-signup">
+            <form class="sign-in-form" action="sign-in" method="POST">
+               <h2 class="title">Sign In</h2>
+               <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="email" placeholder="Email" name="email">
+               </div>
+               <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" name="pwd">
+               </div>
+               <input type="submit" value="LOGIN" class="btn solid">
+               <p class="social-text">Or signin using social platforms</p>
+               <div class="social-media">
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-google"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-linkedin-in"></i>
+                  </a>
+               </div>
+            </form>
+            <form class="sign-up-form" action="sign-up" method="POST">
+               <h2 class="title">Sign Up</h2>
+               <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Name" name="username">
+               </div>
+               <div class="input-field">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Email" name="email">
+               </div>
+               <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Password" name="pwd">
+               </div>
+               <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Re-enter Password" name="re_pwd">
+               </div>
+               <input type="submit" value="SIGN UP" class="btn solid">
+               <p class="social-text">Or sign up using social platforms</p>
+               <div class="social-media">
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-google"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                     <i class="fab fa-linkedin-in"></i>
+                  </a>
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <div class="panels-container">
+         <div class="panel left-panel">
+            <div class="content">
+               <h3>New here?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Culpa, quia voluptate! Laborum asperiores sed quas labore, excepturi commodi ratione 
+                  molestiae perspiciatis nisi hic expedita necessitatibus similique assumenda vitae eveniet velit!
+               </p>
+               <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+            </div>
+            <img src="images/interact.svg" class="image">
+         </div>
+
+         <div class="panel right-panel">
+            <div class="content">
+               <h3>One of us?</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Culpa, quia voluptate! Laborum asperiores sed quas labore, excepturi commodi ratione 
+                  molestiae perspiciatis nisi hic expedita necessitatibus similique assumenda vitae eveniet velit!
+               </p>
+               <button class="btn transparent" id="sign-in-btn">Sign In</button>
+            </div>
+            <img src="images/ask.svg" class="image">
+         </div>
+      </div>
+   </div>
+   
+   <script src="js/index.js"></script>
+</body>
+</html>
