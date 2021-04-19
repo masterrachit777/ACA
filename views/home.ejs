@@ -1,3 +1,155 @@
-<%- include('head.ejs') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+   integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
+   rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   <link href="css/homestyles.css" rel="stylesheet">
+   <title>Document</title>
+</head>
+<body>
+      <div class="background">
+         <video autoplay muted loop>
+            <source src="video/background.mp4" type="video/mp4">
+         </video>
+      </div>
+      <div class="top-section">
+         <div class="nav-bar">
+            <h1>LOGO</h1>
+            <ul>
+               <li><a href="">HOME</a></li>
+               <li><a href="">ABOUT</a></li>
+               <li><a href="">COMPLAIN</a></li>
+               <li><a href="">CONTACT</a></li>
+            </ul>
+         </div>
 
-<%- include('foot.ejs') %>
+         <div class="text-box">
+            <div class="text-box-heading">
+               LOREM IPSUM VEIV   
+            </div>
+            <div class="text-box-numbers">
+               <div>
+                  <p>10</p>
+                  <p>20</p>
+                  <p>30</p>
+               </div>
+               <div class="check-more">
+                  <p>
+                     CHECK MORE >
+                  </p>
+               </div>
+            </div>
+
+         </div>   
+      </div>
+
+      <div class="about-us">
+         <div class="text">
+               <p>Lorem ipsum dolor sit amet</p>
+               <p>
+                  Aenean posuere egestas tempor. Donec ac velit et risus maximus feugiat sed vestibulum augue. 
+                  Aenean sit amet ultrices nisi. Cras scelerisque pretium sem et aliquam. Ut volutpat volutpat quam, 
+                  eu elementum libero malesuada a.
+               </p>
+               <button>LODGE ></button>
+         </div>
+         <div class="image">
+               <img src="images/nordwood-themes-q8U1YgBaRQk-unsplash.jpg">
+               <img src="images/omar-flores-xkoegrJfrBU-unsplash.jpg">
+         </div>
+      </div>
+
+      <div class="more">
+         <p class="heading">More About Us</p>
+         <div class="more-cards">
+            <div class="about-card">
+               <i class="fas fa-shield-alt"></i>
+               <p>Safety & Security Ensured</p>
+            </div>
+            <div class="about-card">
+               <i class="fas fa-user"></i>
+               <p>10+ Registered Users</p>
+            </div>
+            <div class="about-card">
+               <i class="fas fa-user-cog"></i>
+               <p>24*7 Support</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="lodge">
+         <p>Aenean posuere egestas tempor. Donec ac velit et risus maximus feugiat sed vestibulum augue.</p>
+         <button>LODGE A COMPLAINT</button>
+      </div>
+
+      <div class="steps slider" id="steps">
+         <button class="prev"><i class="fas fa-chevron-left"></i></button>
+         <button class="next"><i class="fas fa-chevron-right"></i></button>
+         <div class="slides-container">
+           <h1 class="slider-heading">HOW IT WORKS</h1>
+           <div class="slide active">
+             <div class="slide-content">
+               <img src="" />
+               <p>
+                 Fill the form
+               </p>
+             </div>
+           </div>
+   
+           <div class="slide">
+             <div class="slide-content">
+               <img src="" />
+               <p>Provide an evidence</p>
+             </div>
+           </div>
+   
+           <div class="slide">
+             <div class="slide-content">
+               <img src="" />
+               <p>
+                 Share your location permission
+               </p>
+             </div>
+           </div>
+   
+           <div class="slide">
+             <div class="slide-content">
+               <img src="" />
+               <p>
+                 And that's all.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="contact">
+          <div class="social">
+            <a href=""><i class="fab fa-facebook"> FACEBOOK</i></a><br>
+            <a href=""><i class="fab fa-instagram"> INSTAGRAM</i></a><br>
+            <a href=""><i class="fab fa-twitter"> TWITTER</i></a>
+          </div>
+          <div class="phone-location">
+             <p>99044xxxxx</p>
+             <p>ABC, XYZ Nagar<br>Delhi,110047</p>
+          </div>
+          <form class="form">
+             <input type="text" placeholder="Message"><br>
+             <input type="email" placeholder="Email"> <br>
+             <button type="submit">SEND</button>
+          </form>
+       </div>
+   
+   
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" 
+   integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" 
+   integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+   <script src="js/index.js"></script>
+</body>
+</html>

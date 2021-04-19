@@ -1,0 +1,292 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+   width: 100vw;
+   overflow-x: hidden;
+}
+
+/* BACKGROUND  START */
+.background{
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   z-index: -1;
+}
+
+.background video{
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   object-fit: cover;
+   image-rendering: pixelated;
+}
+
+.top-section{
+   background: rgba(0,0,0,0.2);
+   width: 100%;
+   height: 100vh;
+}
+
+/* NAVBAR */
+.nav-bar{
+   height: 5rem;
+   display: flex;
+   align-items: center;
+}
+.nav-bar ul{
+   position: absolute;
+   right: 2%;
+   width: 70vw;
+   text-align: end;
+}
+
+.nav-bar li{
+   display: inline-block;
+   list-style-type: none;
+   font-size: 1.4rem;
+   font-weight: 600;
+   margin-right: 2.5%;
+}
+
+.nav-bar li a{
+   text-decoration: none;
+   color: #333;
+}
+
+/* TOP SECTION TEXT */
+.text-box{
+   position: absolute;
+   bottom: 0;
+   background: #fff;
+}
+
+.text-box-heading{
+   font-size: 1.7rem;
+   font-weight: 500;
+   padding-left: 10px;
+   background: #C4956A;
+}
+
+.text-box-numbers{
+   width: 50%;
+   display: flex;
+}
+
+.text-box .text-box-numbers div{
+   display: flex;
+   align-items: center;
+   padding: 10px 0;
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+
+.text-box-numbers div p{
+   text-align: center;
+   width: 5rem;
+   border-right: 2px solid #C4956A;
+}
+
+.text-box-numbers .check-more{
+   background: #df6c00;
+}
+
+.text-box-numbers .check-more p{
+   width: 20rem;
+}
+
+/* ABOUT US */
+.about-us{
+   min-height: 70vh;
+   width: 100%;
+   margin: 0 auto;
+   background: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.about-us .text{
+   width: 50%;
+}
+
+.about-us .image{
+   width: 30%;
+}
+
+.about-us .image img{
+   width: 200px;
+   height: 200px;
+   image-rendering: pixelated;
+}
+
+/* MORE */
+.more{
+   min-height: 70vh;
+   background: #fff;
+   text-align: center;
+}
+
+.more .heading{
+   font-size: 3rem;
+   font-weight: 700;
+}
+
+.more-cards{
+   height: 50vh;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.more-cards .about-card{
+   text-align: center;
+   padding-top: 5%;
+   height: 300px;
+   width: 350px;
+   border-radius: 30px;
+   box-shadow: 10px 10px 15px rgba(0,0,0,0.2);
+}
+
+.about-card i{
+   font-size: 4rem;
+   margin-bottom: 10px;
+}
+
+.about-card p{
+   font-size: 1.3rem;
+}
+
+/* LODGE */
+.lodge{
+   height: 40vh;
+   background: #000;
+   color: #fff;
+   text-align: center;
+   padding-top: 7.5%;
+}
+
+/* SLIDER */
+.slider {
+   height: 75vh;
+   background: #ddd;
+   color: #000;
+   padding: 15px;
+ }
+ 
+ .prev,
+ .next {
+   position: absolute;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   border: none;
+   background: #333;
+   color: rgba(0, 0, 0, 1);
+   font-size: 1.2rem;
+   cursor: pointer;
+   outline: none;
+   z-index: 3;
+   margin-top: 18%;
+   transition: 0.3s ease-in-out;
+ }
+ 
+ .prev:hover,
+ .next:hover {
+   opacity: 0.8;
+ }
+ 
+ .prev {
+   left: 10%;
+ }
+ 
+ .next {
+   right: 10%;
+ }
+ 
+ .slides-container {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .slide {
+   width: 100%;
+   height: 100%;
+   padding-top: 3%;
+   text-align: center;
+   align-items: center;
+   display: none;
+ }
+ 
+ .slide.active {
+   display: block;
+ }
+ 
+ .slider-heading {
+   text-align: center;
+   font-size: 2.5rem;
+   padding-top: 4%;
+ }
+ 
+ .slide.active h1 {
+   font-size: 3.5rem;
+   letter-spacing: 5px;
+   animation: MoveInUp 2s;
+   display: inline-block;
+   font-family: "Montserrat";
+   margin-bottom: 3%;
+   animation: MoveInUp 0.7s;
+ }
+ 
+ .slide-content {
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   height: 45vh;
+ }
+ 
+ .slide.active p {
+   width: 40%;
+   margin-right: 3%;
+   font-size: 1.1rem;
+   line-height: 1.4;
+   font-style: italic;
+   color: #555;
+   animation: MoveInLeft 2s;
+ }
+ 
+ .slide.active img {
+   width: 100px;
+   height: 100px;
+   image-rendering: pixelated;
+   margin-bottom: 2%;
+   border-radius: 50%;
+   animation: MoveInRight 2s;
+ }
+ 
+ /* CONTACT */
+ .contact{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #000;
+    color: #fff;
+    font-size: 1.3rem;
+ }
+
+ .contact .social a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .contact form input{
+   margin-bottom: 10px;
+ }
